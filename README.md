@@ -1,6 +1,5 @@
 # Project timekeeper
 
 Collaborators
-- Siddharth Das
-- 
--rekha
+- Siddharth
+- Rekha
