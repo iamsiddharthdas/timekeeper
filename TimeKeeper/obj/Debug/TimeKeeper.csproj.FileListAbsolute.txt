@@ -1,0 +1,17 @@
+C:\Users\aayush.saxena\source\repos\TimeKeeper\obj\Debug\TimeKeeper.csproj.AssemblyReference.cache
+C:\Users\aayush.saxena\source\repos\TimeKeeper\obj\Debug\Welcome.baml
+C:\Users\aayush.saxena\source\repos\TimeKeeper\obj\Debug\MainWindow.g.cs
+C:\Users\aayush.saxena\source\repos\TimeKeeper\obj\Debug\Welcome.g.cs
+C:\Users\aayush.saxena\source\repos\TimeKeeper\obj\Debug\App.g.cs
+C:\Users\aayush.saxena\source\repos\TimeKeeper\obj\Debug\TimeKeeper_MarkupCompile.cache
+C:\Users\aayush.saxena\source\repos\TimeKeeper\obj\Debug\TimeKeeper_MarkupCompile.lref
+C:\Users\aayush.saxena\source\repos\TimeKeeper\bin\Debug\TimeKeeper.exe.config
+C:\Users\aayush.saxena\source\repos\TimeKeeper\bin\Debug\TimeKeeper.exe
+C:\Users\aayush.saxena\source\repos\TimeKeeper\bin\Debug\TimeKeeper.pdb
+C:\Users\aayush.saxena\source\repos\TimeKeeper\obj\Debug\MainWindow.baml
+C:\Users\aayush.saxena\source\repos\TimeKeeper\obj\Debug\TimeKeeper.g.resources
+C:\Users\aayush.saxena\source\repos\TimeKeeper\obj\Debug\TimeKeeper.Properties.Resources.resources
+C:\Users\aayush.saxena\source\repos\TimeKeeper\obj\Debug\TimeKeeper.csproj.GenerateResource.cache
+C:\Users\aayush.saxena\source\repos\TimeKeeper\obj\Debug\TimeKeeper.csproj.CoreCompileInputs.cache
+C:\Users\aayush.saxena\source\repos\TimeKeeper\obj\Debug\TimeKeeper.exe
+C:\Users\aayush.saxena\source\repos\TimeKeeper\obj\Debug\TimeKeeper.pdb
