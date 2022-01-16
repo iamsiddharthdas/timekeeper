@@ -1,0 +1,108 @@
+<nav class="navbar navbar-light">
+    <div class="container">
+        <h1> Employee Timesheet</h1>
+        <div class="d-flex">
+            <button (click)="clickaddproject()" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-primary">Add Project Details</button>
+        </div>
+    </div>
+</nav>
+
+<table class="table mt-3">
+    <thead>
+        <tr>
+            <th scope="col">Project Id</th>
+            <th scope="col">Project Name</th>
+            <th scope="col">Task</th>
+            <th scope="col">Monday</th>
+            <th scope="col">Tuesday</th>
+            <th scope="col">Wednesday</th>
+            <th scope="col">Thursday</th>
+            <th scope="col">Friday</th>
+            <th scope="col">Saturday</th>
+            <th scope="col">Sunday</th>
+            <th scope="col">Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let row of alldata">
+          <td>{{row.projectid}}</td>
+          <td>{{row.project}}</td>
+          <td>{{row.task}}</td>
+          <td>{{row.monday}}</td>
+          <td>{{row.tuesday}}</td>
+          <td>{{row.wednesday}}</td>
+          <td>{{row.thursday}}</td>
+          <td>{{row.friday}}</td>
+          <td>{{row.saturday}}</td>
+          <td>{{row.sunday}}</td>
+          <td>
+              <button (click)="onedit(row)" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-primary">Edit</button>
+              <button (click)="deletedata(row)" class="btn btn-danger mx-3">Delete</button>
+          </td>
+        </tr>
+    </tbody>
+</table>
+
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Fill These Details</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form [formGroup]="formValue">
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Project Id</label>
+              <input type="text" formControlName="projectid" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Project Name</label>
+              <input type="text" formControlName="project" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Task</label>
+                <input type="text" formControlName="task" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              </div>
+              Enter Hours worked per day:
+
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Monday</label>
+                <input type="number" formControlName="monday" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Tuesday</label>
+                <input type="number" formControlName="tuesday" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Wednesday</label>
+                <input type="number" formControlName="wednesday" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Thursday</label>
+                <input type="number" formControlName="thursday" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Friday</label>
+                <input type="number" formControlName="friday" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Saturday</label>
+                <input type="number" formControlName="saturday" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Sunday</label>
+                <input type="number" formControlName="sunday" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" id="cancel" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" *ngIf="showadd" (click)="postdetails()" class="btn btn-primary">Add</button>
+          <button type="button" *ngIf="showupdate" (click)="updatedetails()" class="btn btn-primary">Update</button>
+        </div>
+      </div>
+    </div>
+  </div>
