@@ -65,7 +65,7 @@ namespace TimeKeeper
                         adapter.Fill(dataSet);
                         if (dataSet.Tables[0].Rows.Count > 0)
                         {
-                            errormessage.Text = "Welcome siddharth";
+                            errormessage.Text = "Logged in";
                             Close();
                         }
                         else
