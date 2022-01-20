@@ -48,7 +48,7 @@ namespace TimeSheet1
             MySqlCommand cmd = new MySqlCommand("UPDATE project` SET `day1` = '8', `day2` = '9', `day3` = '9' WHERE(`project_id` = pid);");
 
 
-            con.Close()
+            
         }
 
             private void button4_Click(object sender, EventArgs e)

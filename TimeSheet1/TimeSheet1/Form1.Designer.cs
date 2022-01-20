@@ -123,6 +123,7 @@ namespace TimeSheet1
             this.addbutton.Text = "Add";
             this.addbutton.UseVisualStyleBackColor = true;
             this.addbutton.Click += new System.EventHandler(this.button1_Click);
+            this.addbutton.Enabled = true;
             // 
             // savebutton
             // 
