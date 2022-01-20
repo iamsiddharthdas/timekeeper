@@ -1,0 +1,17 @@
+C:\Users\prashanth.kotian\source\repos\TimeSheet1\TimeSheet1\bin\Debug\netcoreapp3.1\TimeSheet1.exe
+C:\Users\prashanth.kotian\source\repos\TimeSheet1\TimeSheet1\bin\Debug\netcoreapp3.1\TimeSheet1.deps.json
+C:\Users\prashanth.kotian\source\repos\TimeSheet1\TimeSheet1\bin\Debug\netcoreapp3.1\TimeSheet1.runtimeconfig.json
+C:\Users\prashanth.kotian\source\repos\TimeSheet1\TimeSheet1\bin\Debug\netcoreapp3.1\TimeSheet1.runtimeconfig.dev.json
+C:\Users\prashanth.kotian\source\repos\TimeSheet1\TimeSheet1\bin\Debug\netcoreapp3.1\TimeSheet1.dll
+C:\Users\prashanth.kotian\source\repos\TimeSheet1\TimeSheet1\bin\Debug\netcoreapp3.1\TimeSheet1.pdb
+C:\Users\prashanth.kotian\source\repos\TimeSheet1\TimeSheet1\obj\Debug\netcoreapp3.1\TimeSheet1.csproj.AssemblyReference.cache
+C:\Users\prashanth.kotian\source\repos\TimeSheet1\TimeSheet1\obj\Debug\netcoreapp3.1\TimeSheet1.Form1.resources
+C:\Users\prashanth.kotian\source\repos\TimeSheet1\TimeSheet1\obj\Debug\netcoreapp3.1\TimeSheet1.csproj.GenerateResource.cache
+C:\Users\prashanth.kotian\source\repos\TimeSheet1\TimeSheet1\obj\Debug\netcoreapp3.1\TimeSheet1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\prashanth.kotian\source\repos\TimeSheet1\TimeSheet1\obj\Debug\netcoreapp3.1\TimeSheet1.AssemblyInfoInputs.cache
+C:\Users\prashanth.kotian\source\repos\TimeSheet1\TimeSheet1\obj\Debug\netcoreapp3.1\TimeSheet1.AssemblyInfo.cs
+C:\Users\prashanth.kotian\source\repos\TimeSheet1\TimeSheet1\obj\Debug\netcoreapp3.1\TimeSheet1.csproj.CoreCompileInputs.cache
+C:\Users\prashanth.kotian\source\repos\TimeSheet1\TimeSheet1\obj\Debug\netcoreapp3.1\TimeSheet1.dll
+C:\Users\prashanth.kotian\source\repos\TimeSheet1\TimeSheet1\obj\Debug\netcoreapp3.1\TimeSheet1.pdb
+C:\Users\prashanth.kotian\source\repos\TimeSheet1\TimeSheet1\obj\Debug\netcoreapp3.1\TimeSheet1.genruntimeconfig.cache
+C:\Users\prashanth.kotian\source\repos\TimeSheet1\TimeSheet1\obj\Debug\netcoreapp3.1\TimeSheet1.Form2.resources
