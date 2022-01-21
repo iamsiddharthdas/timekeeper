@@ -65,23 +65,23 @@ namespace TimeSheet1
         {
 
             MySqlConnection con = new MySqlConnection("Server = localhost; Database = timekeeper; Uid = root; Pwd =admin;");
-            con.Open();
+            //con.Open();
 
             Form2 f2 = new Form2();
             f2.ShowDialog();
-            con.Close();
+            //con.Close();
 
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
 
-        MySqlConnection con = new MySqlConnection("Server = localhost; Database = timekeeper; Uid = root; Pwd =admin;");
-        con.Open();
-        MySqlCommand cmd = new MySqlCommand("");
+            MySqlConnection con = new MySqlConnection("Server = localhost; Database = timekeeper; Uid = root; Pwd =admin;");
+            con.Open();
+            MySqlCommand cmd = new MySqlCommand("");
 
 
-            
+
         }
 
         private void button4_Click(object sender, EventArgs e)
