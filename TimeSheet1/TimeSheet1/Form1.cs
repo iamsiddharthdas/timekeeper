@@ -78,7 +78,7 @@ namespace TimeSheet1
 
         MySqlConnection con = new MySqlConnection("Server = localhost; Database = timekeeper; Uid = root; Pwd =admin;");
         con.Open();
-        MySqlCommand cmd = new MySqlCommand("UPDATE project` SET `day1` = '8', `day2` = '9', `day3` = '9' WHERE(`project_id` = pid);");
+        MySqlCommand cmd = new MySqlCommand("");
 
 
             

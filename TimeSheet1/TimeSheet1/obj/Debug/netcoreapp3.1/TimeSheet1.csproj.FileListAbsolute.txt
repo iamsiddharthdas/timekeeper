@@ -42,3 +42,30 @@ C:\Users\siddharth.das\OneDrive - Epicor\Documents\GitHub\timekeeper\TimeSheet1\
 C:\Users\siddharth.das\OneDrive - Epicor\Documents\GitHub\timekeeper\TimeSheet1\TimeSheet1\obj\Debug\netcoreapp3.1\TimeSheet1.dll
 C:\Users\siddharth.das\OneDrive - Epicor\Documents\GitHub\timekeeper\TimeSheet1\TimeSheet1\obj\Debug\netcoreapp3.1\TimeSheet1.pdb
 C:\Users\siddharth.das\OneDrive - Epicor\Documents\GitHub\timekeeper\TimeSheet1\TimeSheet1\obj\Debug\netcoreapp3.1\TimeSheet1.genruntimeconfig.cache
+C:\Users\aayush.saxena\Source\Repos\iamsiddharthdas\timekeeper\TimeSheet1\TimeSheet1\bin\Debug\netcoreapp3.1\TimeSheet1.exe
+C:\Users\aayush.saxena\Source\Repos\iamsiddharthdas\timekeeper\TimeSheet1\TimeSheet1\bin\Debug\netcoreapp3.1\TimeSheet1.deps.json
+C:\Users\aayush.saxena\Source\Repos\iamsiddharthdas\timekeeper\TimeSheet1\TimeSheet1\bin\Debug\netcoreapp3.1\TimeSheet1.runtimeconfig.json
+C:\Users\aayush.saxena\Source\Repos\iamsiddharthdas\timekeeper\TimeSheet1\TimeSheet1\bin\Debug\netcoreapp3.1\TimeSheet1.runtimeconfig.dev.json
+C:\Users\aayush.saxena\Source\Repos\iamsiddharthdas\timekeeper\TimeSheet1\TimeSheet1\bin\Debug\netcoreapp3.1\TimeSheet1.dll
+C:\Users\aayush.saxena\Source\Repos\iamsiddharthdas\timekeeper\TimeSheet1\TimeSheet1\bin\Debug\netcoreapp3.1\TimeSheet1.pdb
+C:\Users\aayush.saxena\Source\Repos\iamsiddharthdas\timekeeper\TimeSheet1\TimeSheet1\bin\Debug\netcoreapp3.1\BouncyCastle.Crypto.dll
+C:\Users\aayush.saxena\Source\Repos\iamsiddharthdas\timekeeper\TimeSheet1\TimeSheet1\bin\Debug\netcoreapp3.1\Google.Protobuf.dll
+C:\Users\aayush.saxena\Source\Repos\iamsiddharthdas\timekeeper\TimeSheet1\TimeSheet1\bin\Debug\netcoreapp3.1\K4os.Compression.LZ4.dll
+C:\Users\aayush.saxena\Source\Repos\iamsiddharthdas\timekeeper\TimeSheet1\TimeSheet1\bin\Debug\netcoreapp3.1\K4os.Compression.LZ4.Streams.dll
+C:\Users\aayush.saxena\Source\Repos\iamsiddharthdas\timekeeper\TimeSheet1\TimeSheet1\bin\Debug\netcoreapp3.1\K4os.Hash.xxHash.dll
+C:\Users\aayush.saxena\Source\Repos\iamsiddharthdas\timekeeper\TimeSheet1\TimeSheet1\bin\Debug\netcoreapp3.1\MySql.Data.dll
+C:\Users\aayush.saxena\Source\Repos\iamsiddharthdas\timekeeper\TimeSheet1\TimeSheet1\bin\Debug\netcoreapp3.1\Ubiety.Dns.Core.dll
+C:\Users\aayush.saxena\Source\Repos\iamsiddharthdas\timekeeper\TimeSheet1\TimeSheet1\bin\Debug\netcoreapp3.1\ZstdNet.dll
+C:\Users\aayush.saxena\Source\Repos\iamsiddharthdas\timekeeper\TimeSheet1\TimeSheet1\bin\Debug\netcoreapp3.1\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\aayush.saxena\Source\Repos\iamsiddharthdas\timekeeper\TimeSheet1\TimeSheet1\obj\Debug\netcoreapp3.1\TimeSheet1.csproj.AssemblyReference.cache
+C:\Users\aayush.saxena\Source\Repos\iamsiddharthdas\timekeeper\TimeSheet1\TimeSheet1\obj\Debug\netcoreapp3.1\TimeSheet1.Form1.resources
+C:\Users\aayush.saxena\Source\Repos\iamsiddharthdas\timekeeper\TimeSheet1\TimeSheet1\obj\Debug\netcoreapp3.1\TimeSheet1.Form2.resources
+C:\Users\aayush.saxena\Source\Repos\iamsiddharthdas\timekeeper\TimeSheet1\TimeSheet1\obj\Debug\netcoreapp3.1\TimeSheet1.csproj.GenerateResource.cache
+C:\Users\aayush.saxena\Source\Repos\iamsiddharthdas\timekeeper\TimeSheet1\TimeSheet1\obj\Debug\netcoreapp3.1\TimeSheet1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\aayush.saxena\Source\Repos\iamsiddharthdas\timekeeper\TimeSheet1\TimeSheet1\obj\Debug\netcoreapp3.1\TimeSheet1.AssemblyInfoInputs.cache
+C:\Users\aayush.saxena\Source\Repos\iamsiddharthdas\timekeeper\TimeSheet1\TimeSheet1\obj\Debug\netcoreapp3.1\TimeSheet1.AssemblyInfo.cs
+C:\Users\aayush.saxena\Source\Repos\iamsiddharthdas\timekeeper\TimeSheet1\TimeSheet1\obj\Debug\netcoreapp3.1\TimeSheet1.csproj.CoreCompileInputs.cache
+C:\Users\aayush.saxena\Source\Repos\iamsiddharthdas\timekeeper\TimeSheet1\TimeSheet1\obj\Debug\netcoreapp3.1\TimeSheet1.csproj.CopyComplete
+C:\Users\aayush.saxena\Source\Repos\iamsiddharthdas\timekeeper\TimeSheet1\TimeSheet1\obj\Debug\netcoreapp3.1\TimeSheet1.dll
+C:\Users\aayush.saxena\Source\Repos\iamsiddharthdas\timekeeper\TimeSheet1\TimeSheet1\obj\Debug\netcoreapp3.1\TimeSheet1.pdb
+C:\Users\aayush.saxena\Source\Repos\iamsiddharthdas\timekeeper\TimeSheet1\TimeSheet1\obj\Debug\netcoreapp3.1\TimeSheet1.genruntimeconfig.cache
