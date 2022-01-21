@@ -54,9 +54,10 @@ namespace TimeSheet1
             this.l5 = new System.Windows.Forms.Label();
             this.l6 = new System.Windows.Forms.Label();
             this.l7 = new System.Windows.Forms.Label();
-            this.empname = new System.Windows.Forms.Label();
+            this.EmployeeName = new System.Windows.Forms.Label();
             this.startdate = new System.Windows.Forms.Label();
             this.dtpStartDate = new System.Windows.Forms.DateTimePicker();
+            this.empName = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -284,15 +285,15 @@ namespace TimeSheet1
             this.l7.TabIndex = 12;
             this.l7.Text = ".";
             // 
-            // empname
+            // EmployeeName
             // 
-            this.empname.AutoSize = true;
-            this.empname.Location = new System.Drawing.Point(675, 144);
-            this.empname.Name = "empname";
-            this.empname.Size = new System.Drawing.Size(130, 20);
-            this.empname.TabIndex = 13;
-            this.empname.Text = "Employee Name : ";
-            this.empname.Click += new System.EventHandler(this.label2_Click);
+            this.EmployeeName.AutoSize = true;
+            this.EmployeeName.Location = new System.Drawing.Point(675, 144);
+            this.EmployeeName.Name = "EmployeeName";
+            this.EmployeeName.Size = new System.Drawing.Size(130, 20);
+            this.EmployeeName.TabIndex = 13;
+            this.EmployeeName.Text = "Employee Name : ";
+            this.EmployeeName.Click += new System.EventHandler(this.label2_Click);
             // 
             // startdate
             // 
@@ -311,14 +312,24 @@ namespace TimeSheet1
             this.dtpStartDate.TabIndex = 15;
             this.dtpStartDate.ValueChanged += new System.EventHandler(this.dtpStartDate_ValueChanged);
             // 
+            // empName
+            // 
+            this.empName.AutoSize = true;
+            this.empName.Location = new System.Drawing.Point(810, 146);
+            this.empName.Name = "empName";
+            this.empName.Size = new System.Drawing.Size(12, 20);
+            this.empName.TabIndex = 16;
+            this.empName.Text = ".";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1839, 896);
+            this.Controls.Add(this.empName);
             this.Controls.Add(this.dtpStartDate);
             this.Controls.Add(this.startdate);
-            this.Controls.Add(this.empname);
+            this.Controls.Add(this.EmployeeName);
             this.Controls.Add(this.l7);
             this.Controls.Add(this.l6);
             this.Controls.Add(this.l5);
@@ -356,7 +367,7 @@ namespace TimeSheet1
         private System.Windows.Forms.Label l5;
         private System.Windows.Forms.Label l6;
         private System.Windows.Forms.Label l7;
-        private System.Windows.Forms.Label empname;
+        private System.Windows.Forms.Label EmployeeName;
         private System.Windows.Forms.Label startdate;
         private System.Windows.Forms.DateTimePicker dtpStartDate;
         private System.Windows.Forms.DataGridViewTextBoxColumn pid;
@@ -368,6 +379,7 @@ namespace TimeSheet1
         private System.Windows.Forms.DataGridViewTextBoxColumn day5;
         private System.Windows.Forms.DataGridViewTextBoxColumn day6;
         private System.Windows.Forms.DataGridViewTextBoxColumn day7;
+        private System.Windows.Forms.Label empName;
     }
 }
 
