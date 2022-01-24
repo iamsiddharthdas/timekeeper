@@ -110,7 +110,8 @@ namespace TimeSheet1
             this.textBoxName.Location = new System.Drawing.Point(389, 36);
             this.textBoxName.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxName.Name = "textBoxName";
-            this.textBoxName.Size = new System.Drawing.Size(121, 27);
+            this.textBoxName.PlaceholderText = "Enter Name";
+            this.textBoxName.Size = new System.Drawing.Size(166, 27);
             this.textBoxName.TabIndex = 6;
             // 
             // textBoxEmail
@@ -118,7 +119,8 @@ namespace TimeSheet1
             this.textBoxEmail.Location = new System.Drawing.Point(389, 87);
             this.textBoxEmail.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxEmail.Name = "textBoxEmail";
-            this.textBoxEmail.Size = new System.Drawing.Size(121, 27);
+            this.textBoxEmail.PlaceholderText = "Enter Email";
+            this.textBoxEmail.Size = new System.Drawing.Size(166, 27);
             this.textBoxEmail.TabIndex = 7;
             // 
             // textBoxPassword
@@ -126,24 +128,27 @@ namespace TimeSheet1
             this.textBoxPassword.Location = new System.Drawing.Point(389, 144);
             this.textBoxPassword.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxPassword.Name = "textBoxPassword";
-            this.textBoxPassword.Size = new System.Drawing.Size(121, 27);
+            this.textBoxPassword.PlaceholderText = "Enter Password";
+            this.textBoxPassword.Size = new System.Drawing.Size(166, 27);
             this.textBoxPassword.TabIndex = 8;
+            this.textBoxPassword.UseSystemPasswordChar = true;
             // 
             // textBoxCnfPassword
             // 
             this.textBoxCnfPassword.Location = new System.Drawing.Point(389, 194);
             this.textBoxCnfPassword.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxCnfPassword.Name = "textBoxCnfPassword";
-            this.textBoxCnfPassword.Size = new System.Drawing.Size(121, 27);
+            this.textBoxCnfPassword.PlaceholderText = "Enter Confirm Password";
+            this.textBoxCnfPassword.Size = new System.Drawing.Size(166, 27);
             this.textBoxCnfPassword.TabIndex = 9;
-            this.textBoxCnfPassword.UseSystemPasswordChar = true;
             // 
             // textBoxContact
             // 
             this.textBoxContact.Location = new System.Drawing.Point(389, 300);
             this.textBoxContact.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxContact.Name = "textBoxContact";
-            this.textBoxContact.Size = new System.Drawing.Size(121, 27);
+            this.textBoxContact.PlaceholderText = "Enter Contact";
+            this.textBoxContact.Size = new System.Drawing.Size(166, 27);
             this.textBoxContact.TabIndex = 11;
             // 
             // button1
@@ -159,7 +164,7 @@ namespace TimeSheet1
             // 
             // generateEmpId
             // 
-            this.generateEmpId.Location = new System.Drawing.Point(590, 244);
+            this.generateEmpId.Location = new System.Drawing.Point(687, 240);
             this.generateEmpId.Name = "generateEmpId";
             this.generateEmpId.Size = new System.Drawing.Size(165, 29);
             this.generateEmpId.TabIndex = 14;
@@ -170,7 +175,7 @@ namespace TimeSheet1
             // empId
             // 
             this.empId.AutoSize = true;
-            this.empId.Location = new System.Drawing.Point(434, 248);
+            this.empId.Location = new System.Drawing.Point(461, 249);
             this.empId.Name = "empId";
             this.empId.Size = new System.Drawing.Size(21, 20);
             this.empId.TabIndex = 15;
@@ -180,7 +185,7 @@ namespace TimeSheet1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(767, 583);
+            this.ClientSize = new System.Drawing.Size(913, 583);
             this.Controls.Add(this.empId);
             this.Controls.Add(this.generateEmpId);
             this.Controls.Add(this.button1);

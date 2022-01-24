@@ -41,47 +41,51 @@ namespace TimeSheet1
             // username
             // 
             this.username.AutoSize = true;
-            this.username.Location = new System.Drawing.Point(139, 65);
+            this.username.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.username.Location = new System.Drawing.Point(758, 373);
             this.username.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.username.Name = "username";
-            this.username.Size = new System.Drawing.Size(73, 20);
+            this.username.Size = new System.Drawing.Size(56, 24);
             this.username.TabIndex = 0;
-            this.username.Text = "username";
+            this.username.Text = "Email";
             // 
             // password
             // 
             this.password.AutoSize = true;
-            this.password.Location = new System.Drawing.Point(139, 133);
+            this.password.Location = new System.Drawing.Point(758, 493);
             this.password.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.password.Name = "password";
-            this.password.Size = new System.Drawing.Size(72, 20);
+            this.password.Size = new System.Drawing.Size(91, 24);
             this.password.TabIndex = 1;
-            this.password.Text = "password";
+            this.password.Text = "Password";
             this.password.Click += new System.EventHandler(this.label1_Click);
             // 
             // textBoxUser
             // 
-            this.textBoxUser.Location = new System.Drawing.Point(324, 65);
+            this.textBoxUser.Location = new System.Drawing.Point(955, 373);
             this.textBoxUser.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxUser.Name = "textBoxUser";
-            this.textBoxUser.Size = new System.Drawing.Size(121, 27);
+            this.textBoxUser.PlaceholderText = "Enter Email";
+            this.textBoxUser.Size = new System.Drawing.Size(352, 32);
             this.textBoxUser.TabIndex = 2;
             // 
             // textBoxPassword
             // 
-            this.textBoxPassword.Location = new System.Drawing.Point(324, 133);
+            this.textBoxPassword.Location = new System.Drawing.Point(955, 485);
             this.textBoxPassword.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxPassword.Name = "textBoxPassword";
-            this.textBoxPassword.Size = new System.Drawing.Size(121, 27);
+            this.textBoxPassword.PlaceholderText = "Enter Password";
+            this.textBoxPassword.Size = new System.Drawing.Size(352, 32);
             this.textBoxPassword.TabIndex = 3;
             this.textBoxPassword.UseSystemPasswordChar = true;
             this.textBoxPassword.TextChanged += new System.EventHandler(this.textBoxPassword_TextChanged);
             // 
             // loginButton
             // 
-            this.loginButton.Location = new System.Drawing.Point(235, 214);
+            this.loginButton.Location = new System.Drawing.Point(858, 571);
+            this.loginButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.loginButton.Name = "loginButton";
-            this.loginButton.Size = new System.Drawing.Size(94, 29);
+            this.loginButton.Size = new System.Drawing.Size(118, 35);
             this.loginButton.TabIndex = 4;
             this.loginButton.Text = "Login";
             this.loginButton.UseVisualStyleBackColor = true;
@@ -89,28 +93,29 @@ namespace TimeSheet1
             // 
             // registrationBtn
             // 
-            this.registrationBtn.Location = new System.Drawing.Point(198, 20);
-            this.registrationBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.registrationBtn.Location = new System.Drawing.Point(842, 291);
+            this.registrationBtn.Margin = new System.Windows.Forms.Padding(2);
             this.registrationBtn.Name = "registrationBtn";
-            this.registrationBtn.Size = new System.Drawing.Size(196, 27);
+            this.registrationBtn.Size = new System.Drawing.Size(245, 32);
             this.registrationBtn.TabIndex = 5;
-            this.registrationBtn.Text = "First Time? Register here";
+            this.registrationBtn.Text = "First Time? Register here!!";
             this.registrationBtn.UseVisualStyleBackColor = true;
             this.registrationBtn.Click += new System.EventHandler(this.registrationBtn_Click);
             // 
             // login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(629, 370);
+            this.ClientSize = new System.Drawing.Size(1756, 1055);
             this.Controls.Add(this.registrationBtn);
             this.Controls.Add(this.loginButton);
             this.Controls.Add(this.textBoxPassword);
             this.Controls.Add(this.textBoxUser);
             this.Controls.Add(this.password);
             this.Controls.Add(this.username);
+            this.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "login";
             this.Text = "Form1";
