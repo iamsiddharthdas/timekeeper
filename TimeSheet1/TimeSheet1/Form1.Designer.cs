@@ -35,6 +35,15 @@ namespace TimeSheet1
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.pid = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.day1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.day2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.day3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.day4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.day5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.day6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.day7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.addbutton = new System.Windows.Forms.Button();
             this.savebutton = new System.Windows.Forms.Button();
             this.closebutton = new System.Windows.Forms.Button();
@@ -49,15 +58,6 @@ namespace TimeSheet1
             this.startdate = new System.Windows.Forms.Label();
             this.dtpStartDate = new System.Windows.Forms.DateTimePicker();
             this.empName = new System.Windows.Forms.Label();
-            this.pid = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.day1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.day2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.day3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.day4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.day5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.day6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.day7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -124,6 +124,70 @@ namespace TimeSheet1
             this.dataGridView1.TabIndex = 1;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
+            // pid
+            // 
+            this.pid.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.pid.HeaderText = "Project ID";
+            this.pid.MinimumWidth = 8;
+            this.pid.Name = "pid";
+            this.pid.Width = 107;
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Task";
+            this.Column2.MinimumWidth = 8;
+            this.Column2.Name = "Column2";
+            this.Column2.Width = 150;
+            // 
+            // day1
+            // 
+            this.day1.HeaderText = "Day 1";
+            this.day1.MinimumWidth = 8;
+            this.day1.Name = "day1";
+            this.day1.Width = 150;
+            // 
+            // day2
+            // 
+            this.day2.HeaderText = "Day 2";
+            this.day2.MinimumWidth = 8;
+            this.day2.Name = "day2";
+            this.day2.Width = 150;
+            // 
+            // day3
+            // 
+            this.day3.HeaderText = "Day 3";
+            this.day3.MinimumWidth = 8;
+            this.day3.Name = "day3";
+            this.day3.Width = 150;
+            // 
+            // day4
+            // 
+            this.day4.HeaderText = "Day 4";
+            this.day4.MinimumWidth = 8;
+            this.day4.Name = "day4";
+            this.day4.Width = 150;
+            // 
+            // day5
+            // 
+            this.day5.HeaderText = "Day 5";
+            this.day5.MinimumWidth = 8;
+            this.day5.Name = "day5";
+            this.day5.Width = 150;
+            // 
+            // day6
+            // 
+            this.day6.HeaderText = "Day 6";
+            this.day6.MinimumWidth = 8;
+            this.day6.Name = "day6";
+            this.day6.Width = 150;
+            // 
+            // day7
+            // 
+            this.day7.HeaderText = "Day 7";
+            this.day7.MinimumWidth = 8;
+            this.day7.Name = "day7";
+            this.day7.Width = 150;
+            // 
             // addbutton
             // 
             this.addbutton.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
@@ -168,6 +232,7 @@ namespace TimeSheet1
             this.l1.Size = new System.Drawing.Size(12, 20);
             this.l1.TabIndex = 6;
             this.l1.Text = ".";
+            this.l1.Click += new System.EventHandler(this.l1_Click);
             // 
             // l2
             // 
@@ -260,70 +325,6 @@ namespace TimeSheet1
             this.empName.Size = new System.Drawing.Size(12, 20);
             this.empName.TabIndex = 16;
             this.empName.Text = ".";
-            // 
-            // pid
-            // 
-            this.pid.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            this.pid.HeaderText = "Project ID";
-            this.pid.MinimumWidth = 8;
-            this.pid.Name = "pid";
-            this.pid.Width = 107;
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Task";
-            this.Column2.MinimumWidth = 8;
-            this.Column2.Name = "Column2";
-            this.Column2.Width = 150;
-            // 
-            // day1
-            // 
-            this.day1.HeaderText = "Day 1";
-            this.day1.MinimumWidth = 8;
-            this.day1.Name = "day1";
-            this.day1.Width = 150;
-            // 
-            // day2
-            // 
-            this.day2.HeaderText = "Day 2";
-            this.day2.MinimumWidth = 8;
-            this.day2.Name = "day2";
-            this.day2.Width = 150;
-            // 
-            // day3
-            // 
-            this.day3.HeaderText = "Day 3";
-            this.day3.MinimumWidth = 8;
-            this.day3.Name = "day3";
-            this.day3.Width = 150;
-            // 
-            // day4
-            // 
-            this.day4.HeaderText = "Day 4";
-            this.day4.MinimumWidth = 8;
-            this.day4.Name = "day4";
-            this.day4.Width = 150;
-            // 
-            // day5
-            // 
-            this.day5.HeaderText = "Day 5";
-            this.day5.MinimumWidth = 8;
-            this.day5.Name = "day5";
-            this.day5.Width = 150;
-            // 
-            // day6
-            // 
-            this.day6.HeaderText = "Day 6";
-            this.day6.MinimumWidth = 8;
-            this.day6.Name = "day6";
-            this.day6.Width = 150;
-            // 
-            // day7
-            // 
-            this.day7.HeaderText = "Day 7";
-            this.day7.MinimumWidth = 8;
-            this.day7.Name = "day7";
-            this.day7.Width = 150;
             // 
             // Form1
             // 

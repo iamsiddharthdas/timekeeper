@@ -69,3 +69,5 @@ C:\Users\aayush.saxena\Source\Repos\iamsiddharthdas\timekeeper\TimeSheet1\TimeSh
 C:\Users\aayush.saxena\Source\Repos\iamsiddharthdas\timekeeper\TimeSheet1\TimeSheet1\obj\Debug\netcoreapp3.1\TimeSheet1.dll
 C:\Users\aayush.saxena\Source\Repos\iamsiddharthdas\timekeeper\TimeSheet1\TimeSheet1\obj\Debug\netcoreapp3.1\TimeSheet1.pdb
 C:\Users\aayush.saxena\Source\Repos\iamsiddharthdas\timekeeper\TimeSheet1\TimeSheet1\obj\Debug\netcoreapp3.1\TimeSheet1.genruntimeconfig.cache
+C:\Users\aayush.saxena\Source\Repos\iamsiddharthdas\timekeeper\TimeSheet1\TimeSheet1\obj\Debug\netcoreapp3.1\TimeSheet1.login.resources
+C:\Users\aayush.saxena\Source\Repos\iamsiddharthdas\timekeeper\TimeSheet1\TimeSheet1\obj\Debug\netcoreapp3.1\TimeSheet1.Registration.resources

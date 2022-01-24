@@ -96,7 +96,10 @@ namespace TimeSheet1
 
         }
 
-        
+        private void l1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
         
     
