@@ -83,7 +83,7 @@ namespace TimeSheet1
             // loginButton
             // 
             this.loginButton.Location = new System.Drawing.Point(858, 571);
-            this.loginButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.loginButton.Margin = new System.Windows.Forms.Padding(4);
             this.loginButton.Name = "loginButton";
             this.loginButton.Size = new System.Drawing.Size(118, 35);
             this.loginButton.TabIndex = 4;
@@ -120,6 +120,7 @@ namespace TimeSheet1
             this.Name = "login";
             this.Text = "Form1";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.login_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

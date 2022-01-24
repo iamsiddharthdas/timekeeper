@@ -74,6 +74,11 @@ namespace TimeSheet1
             Registration registration = new Registration();
             registration.ShowDialog();
         }
+
+        private void login_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 
         

@@ -65,10 +65,10 @@ namespace TimeSheet1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(647, 39);
+            this.label1.Location = new System.Drawing.Point(809, 49);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(433, 57);
+            this.label1.Size = new System.Drawing.Size(514, 67);
             this.label1.TabIndex = 0;
             this.label1.Text = "Employee Timesheet";
             // 
@@ -104,7 +104,7 @@ namespace TimeSheet1
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dataGridView1.Location = new System.Drawing.Point(235, 291);
+            this.dataGridView1.Location = new System.Drawing.Point(237, 383);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -120,7 +120,7 @@ namespace TimeSheet1
             this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dataGridView1.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.dataGridView1.RowTemplate.Height = 33;
-            this.dataGridView1.Size = new System.Drawing.Size(1373, 312);
+            this.dataGridView1.Size = new System.Drawing.Size(1400, 390);
             this.dataGridView1.TabIndex = 1;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -130,7 +130,7 @@ namespace TimeSheet1
             this.pid.HeaderText = "Project ID";
             this.pid.MinimumWidth = 8;
             this.pid.Name = "pid";
-            this.pid.Width = 107;
+            this.pid.Width = 132;
             // 
             // Column2
             // 
@@ -191,10 +191,10 @@ namespace TimeSheet1
             // addbutton
             // 
             this.addbutton.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.addbutton.Location = new System.Drawing.Point(670, 660);
+            this.addbutton.Location = new System.Drawing.Point(606, 825);
             this.addbutton.Margin = new System.Windows.Forms.Padding(2);
             this.addbutton.Name = "addbutton";
-            this.addbutton.Size = new System.Drawing.Size(124, 59);
+            this.addbutton.Size = new System.Drawing.Size(155, 74);
             this.addbutton.TabIndex = 2;
             this.addbutton.Text = "Add";
             this.addbutton.UseVisualStyleBackColor = true;
@@ -203,10 +203,10 @@ namespace TimeSheet1
             // savebutton
             // 
             this.savebutton.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.savebutton.Location = new System.Drawing.Point(835, 660);
+            this.savebutton.Location = new System.Drawing.Point(839, 825);
             this.savebutton.Margin = new System.Windows.Forms.Padding(2);
             this.savebutton.Name = "savebutton";
-            this.savebutton.Size = new System.Drawing.Size(121, 59);
+            this.savebutton.Size = new System.Drawing.Size(151, 74);
             this.savebutton.TabIndex = 3;
             this.savebutton.Text = "Save";
             this.savebutton.UseVisualStyleBackColor = true;
@@ -215,21 +215,22 @@ namespace TimeSheet1
             // closebutton
             // 
             this.closebutton.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.closebutton.Location = new System.Drawing.Point(1003, 660);
+            this.closebutton.Location = new System.Drawing.Point(1074, 825);
             this.closebutton.Margin = new System.Windows.Forms.Padding(2);
             this.closebutton.Name = "closebutton";
-            this.closebutton.Size = new System.Drawing.Size(127, 59);
+            this.closebutton.Size = new System.Drawing.Size(159, 74);
             this.closebutton.TabIndex = 5;
-            this.closebutton.Text = "Close";
+            this.closebutton.Text = "Submit";
             this.closebutton.UseVisualStyleBackColor = true;
             this.closebutton.Click += new System.EventHandler(this.button4_Click);
             // 
             // l1
             // 
             this.l1.AutoSize = true;
-            this.l1.Location = new System.Drawing.Point(596, 258);
+            this.l1.Location = new System.Drawing.Point(642, 337);
+            this.l1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.l1.Name = "l1";
-            this.l1.Size = new System.Drawing.Size(12, 20);
+            this.l1.Size = new System.Drawing.Size(16, 25);
             this.l1.TabIndex = 6;
             this.l1.Text = ".";
             this.l1.Click += new System.EventHandler(this.l1_Click);
@@ -237,54 +238,60 @@ namespace TimeSheet1
             // l2
             // 
             this.l2.AutoSize = true;
-            this.l2.Location = new System.Drawing.Point(744, 258);
+            this.l2.Location = new System.Drawing.Point(795, 337);
+            this.l2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.l2.Name = "l2";
-            this.l2.Size = new System.Drawing.Size(12, 20);
+            this.l2.Size = new System.Drawing.Size(16, 25);
             this.l2.TabIndex = 7;
             this.l2.Text = ".";
             // 
             // l3
             // 
             this.l3.AutoSize = true;
-            this.l3.Location = new System.Drawing.Point(893, 258);
+            this.l3.Location = new System.Drawing.Point(954, 337);
+            this.l3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.l3.Name = "l3";
-            this.l3.Size = new System.Drawing.Size(12, 20);
+            this.l3.Size = new System.Drawing.Size(16, 25);
             this.l3.TabIndex = 8;
             this.l3.Text = ".";
             // 
             // l4
             // 
             this.l4.AutoSize = true;
-            this.l4.Location = new System.Drawing.Point(1029, 258);
+            this.l4.Location = new System.Drawing.Point(1098, 337);
+            this.l4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.l4.Name = "l4";
-            this.l4.Size = new System.Drawing.Size(12, 20);
+            this.l4.Size = new System.Drawing.Size(16, 25);
             this.l4.TabIndex = 9;
             this.l4.Text = ".";
             // 
             // l5
             // 
             this.l5.AutoSize = true;
-            this.l5.Location = new System.Drawing.Point(1182, 258);
+            this.l5.Location = new System.Drawing.Point(1235, 337);
+            this.l5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.l5.Name = "l5";
-            this.l5.Size = new System.Drawing.Size(12, 20);
+            this.l5.Size = new System.Drawing.Size(16, 25);
             this.l5.TabIndex = 10;
             this.l5.Text = ".";
             // 
             // l6
             // 
             this.l6.AutoSize = true;
-            this.l6.Location = new System.Drawing.Point(1339, 258);
+            this.l6.Location = new System.Drawing.Point(1388, 337);
+            this.l6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.l6.Name = "l6";
-            this.l6.Size = new System.Drawing.Size(12, 20);
+            this.l6.Size = new System.Drawing.Size(16, 25);
             this.l6.TabIndex = 11;
             this.l6.Text = ".";
             // 
             // l7
             // 
             this.l7.AutoSize = true;
-            this.l7.Location = new System.Drawing.Point(1481, 258);
+            this.l7.Location = new System.Drawing.Point(1552, 337);
+            this.l7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.l7.Name = "l7";
-            this.l7.Size = new System.Drawing.Size(12, 20);
+            this.l7.Size = new System.Drawing.Size(16, 25);
             this.l7.TabIndex = 12;
             this.l7.Text = ".";
             // 
@@ -292,9 +299,10 @@ namespace TimeSheet1
             // 
             this.EmployeeName.AutoSize = true;
             this.EmployeeName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.EmployeeName.Location = new System.Drawing.Point(622, 146);
+            this.EmployeeName.Location = new System.Drawing.Point(778, 182);
+            this.EmployeeName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.EmployeeName.Name = "EmployeeName";
-            this.EmployeeName.Size = new System.Drawing.Size(183, 28);
+            this.EmployeeName.Size = new System.Drawing.Size(220, 32);
             this.EmployeeName.TabIndex = 13;
             this.EmployeeName.Text = "Employee Name : ";
             this.EmployeeName.Click += new System.EventHandler(this.label2_Click);
@@ -303,34 +311,37 @@ namespace TimeSheet1
             // 
             this.startdate.AutoSize = true;
             this.startdate.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.startdate.Location = new System.Drawing.Point(678, 185);
+            this.startdate.Location = new System.Drawing.Point(848, 231);
+            this.startdate.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.startdate.Name = "startdate";
-            this.startdate.Size = new System.Drawing.Size(121, 28);
+            this.startdate.Size = new System.Drawing.Size(142, 32);
             this.startdate.TabIndex = 14;
             this.startdate.Text = "Start Date :";
             // 
             // dtpStartDate
             // 
-            this.dtpStartDate.Location = new System.Drawing.Point(811, 186);
+            this.dtpStartDate.Location = new System.Drawing.Point(1014, 232);
+            this.dtpStartDate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dtpStartDate.Name = "dtpStartDate";
-            this.dtpStartDate.Size = new System.Drawing.Size(269, 27);
+            this.dtpStartDate.Size = new System.Drawing.Size(335, 31);
             this.dtpStartDate.TabIndex = 15;
             this.dtpStartDate.ValueChanged += new System.EventHandler(this.dtpStartDate_ValueChanged);
             // 
             // empName
             // 
             this.empName.AutoSize = true;
-            this.empName.Location = new System.Drawing.Point(810, 146);
+            this.empName.Location = new System.Drawing.Point(1012, 182);
+            this.empName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.empName.Name = "empName";
-            this.empName.Size = new System.Drawing.Size(12, 20);
+            this.empName.Size = new System.Drawing.Size(16, 25);
             this.empName.TabIndex = 16;
             this.empName.Text = ".";
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1839, 896);
+            this.ClientSize = new System.Drawing.Size(1924, 1050);
             this.Controls.Add(this.empName);
             this.Controls.Add(this.dtpStartDate);
             this.Controls.Add(this.startdate);
