@@ -23,7 +23,7 @@ namespace TimeSheet1
         {
             string password = textBoxPassword.Text;
             string conpass = textBoxCnfPassword.Text;
-            if(textBoxName.Text.Length==0 || textBoxEmail.Text.Length==0 || textBoxPassword.Text.Length==0 || textBoxCnfPassword.Text.Length==0 || empId.Text.Length==0 || textBoxContact.Text.Length == 0)
+            if(textBoxName.Text.Length==0 || textBoxEmail.Text.Length==0 || textBoxPassword.Text.Length==0 || textBoxCnfPassword.Text.Length==0 || empId.Text.Length==0 || textBoxContact.Text.Length == 0 )
             {
                 MessageBox.Show("Please fill all entries", "Mandatory field Empty");
             }
@@ -35,8 +35,9 @@ namespace TimeSheet1
             {
                 MySqlConnection con = new MySqlConnection("Server = localhost; Database = timekeeper; Uid = root; Pwd = 123456789;");
                 con.Open();
+                var doj = DateTime.Now.ToString("dd/MM/yyyy");
 
-                MySqlCommand cmd = new MySqlCommand("Insert into login (email,pass,name,empid,contact) values('" + textBoxEmail.Text + "','" + textBoxPassword.Text + "','" + textBoxName.Text + "','" + empId.Text + "','" + textBoxContact.Text + "')", con);
+                MySqlCommand cmd = new MySqlCommand("Insert into employees (email,pass,name,empid,contact,dob,doj) values('" + textBoxEmail.Text + "','" + textBoxPassword.Text + "','" + textBoxName.Text + "','" + empId.Text + "','" + textBoxContact.Text + "','"+dateOfBirth.Value + doj + "')", con);
                 cmd.CommandType = CommandType.Text;
                 cmd.ExecuteNonQuery();
                 con.Close();
@@ -79,6 +80,11 @@ namespace TimeSheet1
                 empid = empid + date;
                 empId.Text = empid;
             }
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

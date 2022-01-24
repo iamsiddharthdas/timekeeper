@@ -43,6 +43,8 @@ namespace TimeSheet1
             this.button1 = new System.Windows.Forms.Button();
             this.generateEmpId = new System.Windows.Forms.Button();
             this.empId = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.dateOfBirth = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
             // Name
@@ -153,7 +155,7 @@ namespace TimeSheet1
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(324, 371);
+            this.button1.Location = new System.Drawing.Point(312, 432);
             this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(90, 27);
@@ -164,7 +166,7 @@ namespace TimeSheet1
             // 
             // generateEmpId
             // 
-            this.generateEmpId.Location = new System.Drawing.Point(687, 240);
+            this.generateEmpId.Location = new System.Drawing.Point(712, 240);
             this.generateEmpId.Name = "generateEmpId";
             this.generateEmpId.Size = new System.Drawing.Size(165, 29);
             this.generateEmpId.TabIndex = 14;
@@ -181,11 +183,32 @@ namespace TimeSheet1
             this.empId.TabIndex = 15;
             this.empId.Text = "--";
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(114, 367);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(96, 20);
+            this.label5.TabIndex = 16;
+            this.label5.Text = "Date Of Birth";
+            // 
+            // dateOfBirth
+            // 
+            this.dateOfBirth.CustomFormat = "dd/MM/yyyy";
+            this.dateOfBirth.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateOfBirth.Location = new System.Drawing.Point(389, 352);
+            this.dateOfBirth.Name = "dateOfBirth";
+            this.dateOfBirth.Size = new System.Drawing.Size(166, 27);
+            this.dateOfBirth.TabIndex = 18;
+            this.dateOfBirth.Value = new System.DateTime(2022, 1, 24, 13, 20, 16, 0);
+            // 
             // Registration
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(913, 583);
+            this.Controls.Add(this.dateOfBirth);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.empId);
             this.Controls.Add(this.generateEmpId);
             this.Controls.Add(this.button1);
@@ -225,5 +248,7 @@ namespace TimeSheet1
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button generateEmpId;
         private System.Windows.Forms.Label empId;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.DateTimePicker dateOfBirth;
     }
 }
