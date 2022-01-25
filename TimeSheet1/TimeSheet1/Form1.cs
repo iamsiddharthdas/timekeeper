@@ -34,6 +34,8 @@ namespace TimeSheet1
             day5.HeaderText = dtpStartDate.Value.AddDays(4).DayOfWeek.ToString();
             day6.HeaderText = dtpStartDate.Value.AddDays(5).DayOfWeek.ToString();
             day7.HeaderText = dtpStartDate.Value.AddDays(6).DayOfWeek.ToString();
+
+           
         }
 
         private void dtpStartDate_ValueChanged(object sender, EventArgs e)
@@ -59,7 +61,10 @@ namespace TimeSheet1
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            
+            Form2 f2 = new Form2();
+            var index = this.dataGridView1.Rows.Add();
+            this.dataGridView1.Rows[index].Cells[1].Value = f2.ShowDialog();
+                       
         }
 
 
