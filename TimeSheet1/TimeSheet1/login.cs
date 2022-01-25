@@ -11,8 +11,11 @@ using MySql.Data.MySqlClient;
 using System.Text.RegularExpressions;
 namespace TimeSheet1
 {
+
     public partial class login : Form
     {
+        public static string name = "";
+        public static string empid = "";
         public login()
         {
             InitializeComponent();
@@ -45,23 +48,29 @@ namespace TimeSheet1
             else
             {
                 con.Open();
-                string username = textBoxUser.Text;
-                string password = textBoxPassword.Text;
-                MySqlCommand cmd = new MySqlCommand("select * from login where email='" + textBoxUser.Text + "'and pass='" +textBoxPassword.Text + "'", con);
+                MySqlCommand cmd = new MySqlCommand("select empid,name from employees where email='" + textBoxUser.Text + "'and pass='" +textBoxPassword.Text + "'", con);
                 cmd.CommandType = CommandType.Text;
                 MySqlDataAdapter adapter = new MySqlDataAdapter();
                 adapter.SelectCommand = cmd;
                 DataSet dataSet = new DataSet();
                 adapter.Fill(dataSet);
-                con.Close();
                 if (dataSet.Tables[0].Rows.Count > 0)
                 {
+                    MySqlCommand find = new MySqlCommand("select empid,name from employees where email='" + textBoxUser.Text + "'and pass='" + textBoxPassword.Text + "'", con);
+                    MySqlDataReader reader = find.ExecuteReader();
+                    while (reader.Read())
+                    {
+                         name = reader[1].ToString();
+                         empid = reader[0].ToString();
+                    }
+                    con.Close();
                     this.Hide();
                     Form1 f1 = new Form1();
                     f1.ShowDialog();
                 }
                 else 
-                {            
+                {
+                    con.Close();
                     MessageBox.Show("Email entered is not registered,would you Like to Register?","User not found",MessageBoxButtons.OK);
                 }
 

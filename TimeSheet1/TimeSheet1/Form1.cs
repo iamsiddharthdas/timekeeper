@@ -25,6 +25,8 @@ namespace TimeSheet1
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            empName.Text = login.name;
+            emp_id.Text = login.empid;
             day1.HeaderText = dtpStartDate.Value.AddDays(0).DayOfWeek.ToString();
             day2.HeaderText = dtpStartDate.Value.AddDays(1).DayOfWeek.ToString();
             day3.HeaderText = dtpStartDate.Value.AddDays(2).DayOfWeek.ToString();
@@ -84,10 +86,8 @@ namespace TimeSheet1
 
         }
 
-        private void button4_Click(object sender, EventArgs e)
-        {
-            Close();
-        }
+        
+
 
         
 
@@ -97,6 +97,11 @@ namespace TimeSheet1
         }
 
         private void l1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click_1(object sender, EventArgs e)
         {
 
         }

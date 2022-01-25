@@ -29,10 +29,10 @@ namespace TimeSheet1
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.pid = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -46,7 +46,7 @@ namespace TimeSheet1
             this.day7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.addbutton = new System.Windows.Forms.Button();
             this.savebutton = new System.Windows.Forms.Button();
-            this.closebutton = new System.Windows.Forms.Button();
+            this.submitBtn = new System.Windows.Forms.Button();
             this.l1 = new System.Windows.Forms.Label();
             this.l2 = new System.Windows.Forms.Label();
             this.l3 = new System.Windows.Forms.Label();
@@ -58,6 +58,8 @@ namespace TimeSheet1
             this.startdate = new System.Windows.Forms.Label();
             this.dtpStartDate = new System.Windows.Forms.DateTimePicker();
             this.empName = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.emp_id = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -77,14 +79,14 @@ namespace TimeSheet1
             this.dataGridView1.AllowUserToOrderColumns = true;
             this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.pid,
@@ -96,28 +98,28 @@ namespace TimeSheet1
             this.day5,
             this.day6,
             this.day7});
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle6;
             this.dataGridView1.Location = new System.Drawing.Point(237, 383);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle7;
             this.dataGridView1.RowHeadersWidth = 62;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle8;
             this.dataGridView1.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.dataGridView1.RowTemplate.Height = 33;
             this.dataGridView1.Size = new System.Drawing.Size(1400, 390);
@@ -212,17 +214,16 @@ namespace TimeSheet1
             this.savebutton.UseVisualStyleBackColor = true;
             this.savebutton.Click += new System.EventHandler(this.button2_Click);
             // 
-            // closebutton
+            // submitBtn
             // 
-            this.closebutton.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.closebutton.Location = new System.Drawing.Point(1074, 825);
-            this.closebutton.Margin = new System.Windows.Forms.Padding(2);
-            this.closebutton.Name = "closebutton";
-            this.closebutton.Size = new System.Drawing.Size(159, 74);
-            this.closebutton.TabIndex = 5;
-            this.closebutton.Text = "Submit";
-            this.closebutton.UseVisualStyleBackColor = true;
-            this.closebutton.Click += new System.EventHandler(this.button4_Click);
+            this.submitBtn.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.submitBtn.Location = new System.Drawing.Point(1074, 825);
+            this.submitBtn.Margin = new System.Windows.Forms.Padding(2);
+            this.submitBtn.Name = "submitBtn";
+            this.submitBtn.Size = new System.Drawing.Size(159, 74);
+            this.submitBtn.TabIndex = 5;
+            this.submitBtn.Text = "Submit";
+            this.submitBtn.UseVisualStyleBackColor = true;
             // 
             // l1
             // 
@@ -299,7 +300,7 @@ namespace TimeSheet1
             // 
             this.EmployeeName.AutoSize = true;
             this.EmployeeName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.EmployeeName.Location = new System.Drawing.Point(778, 182);
+            this.EmployeeName.Location = new System.Drawing.Point(784, 158);
             this.EmployeeName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.EmployeeName.Name = "EmployeeName";
             this.EmployeeName.Size = new System.Drawing.Size(220, 32);
@@ -311,7 +312,7 @@ namespace TimeSheet1
             // 
             this.startdate.AutoSize = true;
             this.startdate.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.startdate.Location = new System.Drawing.Point(848, 231);
+            this.startdate.Location = new System.Drawing.Point(854, 261);
             this.startdate.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.startdate.Name = "startdate";
             this.startdate.Size = new System.Drawing.Size(142, 32);
@@ -320,8 +321,8 @@ namespace TimeSheet1
             // 
             // dtpStartDate
             // 
-            this.dtpStartDate.Location = new System.Drawing.Point(1014, 232);
-            this.dtpStartDate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtpStartDate.Location = new System.Drawing.Point(1004, 261);
+            this.dtpStartDate.Margin = new System.Windows.Forms.Padding(4);
             this.dtpStartDate.Name = "dtpStartDate";
             this.dtpStartDate.Size = new System.Drawing.Size(335, 31);
             this.dtpStartDate.TabIndex = 15;
@@ -330,18 +331,42 @@ namespace TimeSheet1
             // empName
             // 
             this.empName.AutoSize = true;
-            this.empName.Location = new System.Drawing.Point(1012, 182);
+            this.empName.Location = new System.Drawing.Point(1022, 164);
             this.empName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.empName.Name = "empName";
             this.empName.Size = new System.Drawing.Size(16, 25);
             this.empName.TabIndex = 16;
             this.empName.Text = ".";
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label2.Location = new System.Drawing.Point(825, 204);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(179, 32);
+            this.label2.TabIndex = 17;
+            this.label2.Text = "Employee ID : ";
+            this.label2.Click += new System.EventHandler(this.label2_Click_1);
+            // 
+            // emp_id
+            // 
+            this.emp_id.AutoSize = true;
+            this.emp_id.Location = new System.Drawing.Point(1022, 210);
+            this.emp_id.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.emp_id.Name = "emp_id";
+            this.emp_id.Size = new System.Drawing.Size(16, 25);
+            this.emp_id.TabIndex = 18;
+            this.emp_id.Text = ".";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1924, 1050);
+            this.Controls.Add(this.emp_id);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.empName);
             this.Controls.Add(this.dtpStartDate);
             this.Controls.Add(this.startdate);
@@ -354,7 +379,7 @@ namespace TimeSheet1
             this.Controls.Add(this.l2);
             this.Controls.Add(this.l1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.closebutton);
+            this.Controls.Add(this.submitBtn);
             this.Controls.Add(this.savebutton);
             this.Controls.Add(this.addbutton);
             this.Controls.Add(this.dataGridView1);
@@ -375,7 +400,7 @@ namespace TimeSheet1
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button addbutton;
         private System.Windows.Forms.Button savebutton;
-        private System.Windows.Forms.Button closebutton;
+        private System.Windows.Forms.Button submitBtn;
         private System.Windows.Forms.Label l1;
         private System.Windows.Forms.Label l2;
         private System.Windows.Forms.Label l3;
@@ -396,6 +421,8 @@ namespace TimeSheet1
         private System.Windows.Forms.DataGridViewTextBoxColumn day5;
         private System.Windows.Forms.DataGridViewTextBoxColumn day6;
         private System.Windows.Forms.DataGridViewTextBoxColumn day7;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label emp_id;
     }
 }
 

@@ -42,9 +42,10 @@ namespace TimeSheet1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(204, 245);
+            this.label1.Location = new System.Drawing.Point(255, 306);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(64, 28);
+            this.label1.Size = new System.Drawing.Size(77, 32);
             this.label1.TabIndex = 0;
             this.label1.Text = "Task :";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -53,9 +54,10 @@ namespace TimeSheet1
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(151, 175);
+            this.label2.Location = new System.Drawing.Point(189, 219);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(117, 28);
+            this.label2.Size = new System.Drawing.Size(142, 32);
             this.label2.TabIndex = 1;
             this.label2.Text = "Project ID :";
             // 
@@ -67,9 +69,10 @@ namespace TimeSheet1
             this.ProjectName.Items.Add("BisTrack");
             this.ProjectName.Items.Add("iScala");
             this.ProjectName.Items.Add("Kinetic");
-            this.ProjectName.Location = new System.Drawing.Point(274, 113);
+            this.ProjectName.Location = new System.Drawing.Point(342, 141);
+            this.ProjectName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ProjectName.Name = "ProjectName";
-            this.ProjectName.Size = new System.Drawing.Size(244, 27);
+            this.ProjectName.Size = new System.Drawing.Size(305, 31);
             this.ProjectName.Sorted = true;
             this.ProjectName.TabIndex = 2;
             this.ProjectName.Text = "<select>";
@@ -78,42 +81,47 @@ namespace TimeSheet1
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(116, 112);
+            this.label3.Location = new System.Drawing.Point(145, 140);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(152, 28);
+            this.label3.Size = new System.Drawing.Size(183, 32);
             this.label3.TabIndex = 3;
             this.label3.Text = "Project Name :";
             // 
             // domainUpDown2
             // 
-            this.domainUpDown2.Location = new System.Drawing.Point(274, 175);
+            this.domainUpDown2.Location = new System.Drawing.Point(342, 219);
+            this.domainUpDown2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.domainUpDown2.Name = "domainUpDown2";
-            this.domainUpDown2.Size = new System.Drawing.Size(244, 27);
+            this.domainUpDown2.Size = new System.Drawing.Size(305, 31);
             this.domainUpDown2.TabIndex = 4;
             this.domainUpDown2.Text = "<select>";
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(274, 245);
+            this.richTextBox1.Location = new System.Drawing.Point(342, 306);
+            this.richTextBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(244, 120);
+            this.richTextBox1.Size = new System.Drawing.Size(304, 149);
             this.richTextBox1.TabIndex = 5;
             this.richTextBox1.Text = "";
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(493, 448);
+            this.button1.Location = new System.Drawing.Point(616, 560);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(127, 44);
+            this.button1.Size = new System.Drawing.Size(159, 55);
             this.button1.TabIndex = 6;
             this.button1.Text = "Save";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form2
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(700, 537);
+            this.ClientSize = new System.Drawing.Size(875, 671);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.domainUpDown2);
