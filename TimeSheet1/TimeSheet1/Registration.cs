@@ -44,7 +44,7 @@ namespace TimeSheet1
                 {
                     MySqlConnection con = new MySqlConnection("Server = localhost; Database = timekeeper; Uid = root; Pwd = 123456789;");
                     con.Open();
-                    MySqlCommand find = new MySqlCommand("select * from employees where email='" + textBoxEmail.Text + "'",con);
+                    MySqlCommand find = new MySqlCommand("select email from employees where email='" + textBoxEmail.Text + "'",con);
                     find.CommandType = CommandType.Text;
                     MySqlDataAdapter adapter = new MySqlDataAdapter();
                     adapter.SelectCommand = find;
@@ -61,8 +61,8 @@ namespace TimeSheet1
                     }
                     else
                     {
-                        var doj = DateTime.Now.ToString("dd/MM/yyyy");
-                        MySqlCommand cmd = new MySqlCommand("Insert into employees (email,pass,name,empid,contact,dob,doj,role) values('" + textBoxEmail.Text + "','" + textBoxPassword.Text + "','" + textBoxName.Text + "','" + empId.Text + "','" + textBoxContact.Text + "'," + dateOfBirth.Text +","+ doj + ",'emp'"+")", con);
+                        var doj = DateTime.Now.ToString("yyyy/MM/dd");
+                        MySqlCommand cmd = new MySqlCommand("Insert into employees (email,pass,name,empid,contact,dob,doj,role) values('" + textBoxEmail.Text + "','" + textBoxPassword.Text + "','" + textBoxName.Text + "','" + empId.Text + "','" + textBoxContact.Text + "'," + dateOfBirth.Text+","+ doj + ",'emp'"+")", con);
                         MySqlDataReader MyReader=cmd.ExecuteReader();
                         con.Close();
                         MessageBox.Show("User Registered", "success");

@@ -40,7 +40,7 @@ namespace TimeSheet1
             {
                 MessageBox.Show("Please enter email/Password","Empty Email/Password");
             }
-            else if ((!Regex.IsMatch(textBoxUser.Text, @"^[a-zA-Z][\w\.-]*[a-zA-Z0-9]@[a-zA-Z0-9][\w\.-]*[a-zA-Z0-9]\.[a-zA-Z][a-zA-Z\.]*[a-zA-Z]$")) || (!Regex.IsMatch(textBoxPassword.Text, @"^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[^\da-zA-Z]).{8,15}$")))
+            else if ((!Regex.IsMatch(textBoxUser.Text, @"^[a-zA-Z][\w\.-]*[a-zA-Z0-9]@[a-zA-Z0-9][\w\.-]*[a-zA-Z0-9]\.[a-zA-Z][a-zA-Z\.]*[a-zA-Z]$")))
             {
                 MessageBox.Show("Password or email does not match specified requirements","Invalid Entry");
 
@@ -48,30 +48,42 @@ namespace TimeSheet1
             else
             {
                 con.Open();
-                MySqlCommand cmd = new MySqlCommand("select empid,name from employees where email='" + textBoxUser.Text + "'and pass='" +textBoxPassword.Text + "'", con);
-                cmd.CommandType = CommandType.Text;
-                MySqlDataAdapter adapter = new MySqlDataAdapter();
-                adapter.SelectCommand = cmd;
-                DataSet dataSet = new DataSet();
-                adapter.Fill(dataSet);
-                if (dataSet.Tables[0].Rows.Count > 0)
-                {
-                    MySqlCommand find = new MySqlCommand("select empid,name from employees where email='" + textBoxUser.Text + "'and pass='" + textBoxPassword.Text + "'", con);
-                    MySqlDataReader reader = find.ExecuteReader();
-                    while (reader.Read())
+                string pass = "";
+                MySqlCommand cmd = new MySqlCommand("select email from employees where email='" + textBoxUser.Text + "'", con);
+                string pread = textBoxPassword.Text.ToString();
+                  
+                    cmd.CommandType = CommandType.Text;
+                    MySqlDataAdapter adapter = new MySqlDataAdapter();
+                    adapter.SelectCommand = cmd;
+                    DataSet dataSet = new DataSet();
+                    adapter.Fill(dataSet);
+                    if (dataSet.Tables[0].Rows.Count > 0)
                     {
-                         name = reader[1].ToString();
-                         empid = reader[0].ToString();
+                        MySqlCommand find = new MySqlCommand("select empid,name,pass from employees where email='" + textBoxUser.Text + "'", con);
+                        MySqlDataReader reader = find.ExecuteReader();
+                        while (reader.Read())
+                        {
+                            name = reader[1].ToString();
+                            empid = reader[0].ToString();
+                            pass = reader[2].ToString();
+                        }
+                        con.Close();
+                    if (pass == textBoxPassword.Text)
+                    {
+                        this.Hide();
+                        Form1 f1 = new Form1();
+                        f1.ShowDialog();
+
                     }
-                    con.Close();
-                    this.Hide();
-                    Form1 f1 = new Form1();
-                    f1.ShowDialog();
-                }
-                else 
+                    else
+                    {
+                        MessageBox.Show("Wrong Password");
+                    }
+                        
+                    }
+                else
                 {
-                    con.Close();
-                    MessageBox.Show("Email entered is not registered,would you Like to Register?","User not found",MessageBoxButtons.OK);
+                    MessageBox.Show("User Not Found,Please Register", "Invalid User");
                 }
 
             }

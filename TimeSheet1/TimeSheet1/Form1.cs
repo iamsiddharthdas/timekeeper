@@ -27,6 +27,29 @@ namespace TimeSheet1
         {
             empName.Text = login.name;
             emp_id.Text = login.empid;
+            MySqlConnection con = new MySqlConnection("Server = localhost; Database = timekeeper;  Uid = root; Pwd =123456789;");
+            con.Open();
+            MySqlCommand cmd = new MySqlCommand("select project_id,project_name from project where empid='" + emp_id.Text + "'", con);
+            MySqlDataReader reader = cmd.ExecuteReader();
+            //MySqlDataAdapter adapter = new MySqlDataAdapter();
+            //adapter.SelectCommand = cmd;
+            //DataTable dt = new DataTable();
+            //adapter.Fill(dt);
+            //int index = 0;
+            //foreach(DataRow row in dt.Rows)
+            //{
+            //    timeSheet.Rows[index].Cells[0].Value = row["project_id"];
+            //    timeSheet.Rows[index].Cells[1].Value = row["project_name"];
+            //    index++;
+            //}
+            while (reader.Read())
+            {
+                  timeSheet.Rows[0].Cells[0].Value = reader[0].ToString();
+                  timeSheet.Rows[0].Cells[1].Value = reader[1].ToString();
+                  reader.NextResult();
+            }
+
+
             day1.HeaderText = dtpStartDate.Value.AddDays(0).DayOfWeek.ToString();
             day2.HeaderText = dtpStartDate.Value.AddDays(1).DayOfWeek.ToString();
             day3.HeaderText = dtpStartDate.Value.AddDays(2).DayOfWeek.ToString();
@@ -61,40 +84,34 @@ namespace TimeSheet1
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            Form2 f2 = new Form2();
-            var index = this.dataGridView1.Rows.Add();
-            this.dataGridView1.Rows[index].Cells[1].Value = f2.ShowDialog();
-                       
-        }
-
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-            MySqlConnection con = new MySqlConnection("Server = localhost; Database = timekeeper; Uid = root; Pwd =admin;");
-            //con.Open();
-
-            Form2 f2 = new Form2();
-            f2.ShowDialog();
-            //con.Close();
+           
 
         }
+
+
+        //private void button1_Click(object sender, EventArgs e)
+        //{
+
+        //    MySqlConnection con = new MySqlConnection("Server = localhost; Database = timekeeper; Uid = root; Pwd =admin;");
+        //    //con.Open();
+
+        //    Form2 f2 = new Form2();
+        //    f2.ShowDialog();
+        //    //con.Close();
+
+        //}
 
         private void button2_Click(object sender, EventArgs e)
         {
 
-            MySqlConnection con = new MySqlConnection("Server = localhost; Database = timekeeper; Uid = root; Pwd =admin;");
-            con.Open();
+            MySqlConnection con = new MySqlConnection("Server = localhost; Database = timekeeper; Uid = root; Pwd =123456789;");
+            //con.Open();
             MySqlCommand cmd = new MySqlCommand("");
-
 
 
         }
 
-        
-
-
-        
+              
 
         private void label2_Click(object sender, EventArgs e)
         {
@@ -107,6 +124,11 @@ namespace TimeSheet1
         }
 
         private void label2_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void timeSheet_DefaultValuesNeeded(object sender, DataGridViewRowEventArgs e)
         {
 
         }

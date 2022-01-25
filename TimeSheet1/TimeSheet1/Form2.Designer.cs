@@ -67,7 +67,6 @@ namespace TimeSheet1
             // 
             this.ProjectName.Cursor = System.Windows.Forms.Cursors.Default;
             this.ProjectName.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.ProjectName.Items.Add("");
             this.ProjectName.Items.Add("BisTrack");
             this.ProjectName.Items.Add("iScala");
             this.ProjectName.Items.Add("Kinetic");
@@ -92,6 +91,15 @@ namespace TimeSheet1
             // 
             // domainUpDown2
             // 
+            this.domainUpDown2.Items.Add("pid001");
+            this.domainUpDown2.Items.Add("pid002");
+            this.domainUpDown2.Items.Add("pid003");
+            this.domainUpDown2.Items.Add("pid101");
+            this.domainUpDown2.Items.Add("pid102");
+            this.domainUpDown2.Items.Add("pid103");
+            this.domainUpDown2.Items.Add("pid201");
+            this.domainUpDown2.Items.Add("pid202");
+            this.domainUpDown2.Items.Add("pid203");
             this.domainUpDown2.Location = new System.Drawing.Point(342, 219);
             this.domainUpDown2.Margin = new System.Windows.Forms.Padding(4);
             this.domainUpDown2.Name = "domainUpDown2";
