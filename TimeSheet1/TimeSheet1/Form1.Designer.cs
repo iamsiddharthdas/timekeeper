@@ -45,7 +45,7 @@ namespace TimeSheet1
             this.day5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.day6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.day7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.savebutton = new System.Windows.Forms.Button();
+            this.saveBtn1 = new System.Windows.Forms.Button();
             this.submitBtn = new System.Windows.Forms.Button();
             this.l1 = new System.Windows.Forms.Label();
             this.l2 = new System.Windows.Forms.Label();
@@ -60,6 +60,7 @@ namespace TimeSheet1
             this.empName = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.emp_id = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.timeSheet)).BeginInit();
             this.SuspendLayout();
             // 
@@ -200,22 +201,22 @@ namespace TimeSheet1
             this.day7.Name = "day7";
             this.day7.Width = 150;
             // 
-            // savebutton
+            // saveBtn1
             // 
-            this.savebutton.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.savebutton.Location = new System.Drawing.Point(709, 825);
-            this.savebutton.Margin = new System.Windows.Forms.Padding(2);
-            this.savebutton.Name = "savebutton";
-            this.savebutton.Size = new System.Drawing.Size(151, 74);
-            this.savebutton.TabIndex = 3;
-            this.savebutton.Text = "Save";
-            this.savebutton.UseVisualStyleBackColor = true;
-            this.savebutton.Click += new System.EventHandler(this.button2_Click);
+            this.saveBtn1.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.saveBtn1.Location = new System.Drawing.Point(853, 825);
+            this.saveBtn1.Margin = new System.Windows.Forms.Padding(2);
+            this.saveBtn1.Name = "saveBtn1";
+            this.saveBtn1.Size = new System.Drawing.Size(151, 74);
+            this.saveBtn1.TabIndex = 3;
+            this.saveBtn1.Text = "Save";
+            this.saveBtn1.UseVisualStyleBackColor = true;
+            this.saveBtn1.Click += new System.EventHandler(this.button2_Click);
             // 
             // submitBtn
             // 
             this.submitBtn.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.submitBtn.Location = new System.Drawing.Point(924, 825);
+            this.submitBtn.Location = new System.Drawing.Point(1057, 825);
             this.submitBtn.Margin = new System.Windows.Forms.Padding(2);
             this.submitBtn.Name = "submitBtn";
             this.submitBtn.Size = new System.Drawing.Size(159, 74);
@@ -358,11 +359,24 @@ namespace TimeSheet1
             this.emp_id.TabIndex = 18;
             this.emp_id.Text = ".";
             // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button1.Location = new System.Drawing.Point(642, 825);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(151, 74);
+            this.button1.TabIndex = 19;
+            this.button1.Text = "Add";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1924, 1050);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.emp_id);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.empName);
@@ -378,7 +392,7 @@ namespace TimeSheet1
             this.Controls.Add(this.l1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.submitBtn);
-            this.Controls.Add(this.savebutton);
+            this.Controls.Add(this.saveBtn1);
             this.Controls.Add(this.timeSheet);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
@@ -395,7 +409,7 @@ namespace TimeSheet1
         #endregion
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView timeSheet;
-        private System.Windows.Forms.Button savebutton;
+        private System.Windows.Forms.Button saveBtn1;
         private System.Windows.Forms.Button submitBtn;
         private System.Windows.Forms.Label l1;
         private System.Windows.Forms.Label l2;
@@ -420,6 +434,7 @@ namespace TimeSheet1
         private System.Windows.Forms.DataGridViewTextBoxColumn day5;
         private System.Windows.Forms.DataGridViewTextBoxColumn day6;
         private System.Windows.Forms.DataGridViewTextBoxColumn day7;
+        private System.Windows.Forms.Button button1;
     }
 }
 

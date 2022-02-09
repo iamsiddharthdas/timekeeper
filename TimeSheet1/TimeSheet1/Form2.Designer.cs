@@ -31,13 +31,11 @@ namespace TimeSheet1
         {
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.ProjectName = new System.Windows.Forms.DomainUpDown();
             this.label3 = new System.Windows.Forms.Label();
-            this.domainUpDown2 = new System.Windows.Forms.DomainUpDown();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
-            this.projectStartDate = new System.Windows.Forms.DateTimePicker();
+            this.saveBtn2 = new System.Windows.Forms.Button();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // label1
@@ -63,21 +61,6 @@ namespace TimeSheet1
             this.label2.TabIndex = 1;
             this.label2.Text = "Project ID :";
             // 
-            // ProjectName
-            // 
-            this.ProjectName.Cursor = System.Windows.Forms.Cursors.Default;
-            this.ProjectName.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.ProjectName.Items.Add("BisTrack");
-            this.ProjectName.Items.Add("iScala");
-            this.ProjectName.Items.Add("Kinetic");
-            this.ProjectName.Location = new System.Drawing.Point(342, 141);
-            this.ProjectName.Margin = new System.Windows.Forms.Padding(4);
-            this.ProjectName.Name = "ProjectName";
-            this.ProjectName.Size = new System.Drawing.Size(305, 31);
-            this.ProjectName.Sorted = true;
-            this.ProjectName.TabIndex = 2;
-            this.ProjectName.Text = "<select>";
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -89,75 +72,70 @@ namespace TimeSheet1
             this.label3.TabIndex = 3;
             this.label3.Text = "Project Name :";
             // 
-            // domainUpDown2
-            // 
-            this.domainUpDown2.Items.Add("pid001");
-            this.domainUpDown2.Items.Add("pid002");
-            this.domainUpDown2.Items.Add("pid003");
-            this.domainUpDown2.Items.Add("pid101");
-            this.domainUpDown2.Items.Add("pid102");
-            this.domainUpDown2.Items.Add("pid103");
-            this.domainUpDown2.Items.Add("pid201");
-            this.domainUpDown2.Items.Add("pid202");
-            this.domainUpDown2.Items.Add("pid203");
-            this.domainUpDown2.Location = new System.Drawing.Point(342, 219);
-            this.domainUpDown2.Margin = new System.Windows.Forms.Padding(4);
-            this.domainUpDown2.Name = "domainUpDown2";
-            this.domainUpDown2.Size = new System.Drawing.Size(305, 31);
-            this.domainUpDown2.TabIndex = 4;
-            this.domainUpDown2.Text = "<select>";
-            // 
             // richTextBox1
             // 
             this.richTextBox1.Location = new System.Drawing.Point(342, 306);
             this.richTextBox1.Margin = new System.Windows.Forms.Padding(4);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(304, 66);
+            this.richTextBox1.Size = new System.Drawing.Size(304, 122);
             this.richTextBox1.TabIndex = 5;
             this.richTextBox1.Text = "";
             // 
-            // button1
+            // saveBtn2
             // 
-            this.button1.Location = new System.Drawing.Point(616, 560);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(159, 55);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Save";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.saveBtn2.Location = new System.Drawing.Point(605, 554);
+            this.saveBtn2.Margin = new System.Windows.Forms.Padding(4);
+            this.saveBtn2.Name = "saveBtn2";
+            this.saveBtn2.Size = new System.Drawing.Size(159, 55);
+            this.saveBtn2.TabIndex = 6;
+            this.saveBtn2.Text = "Save";
+            this.saveBtn2.UseVisualStyleBackColor = true;
+            this.saveBtn2.Click += new System.EventHandler(this.button1_Click);
             // 
-            // label4
+            // comboBox1
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(186, 422);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(142, 32);
-            this.label4.TabIndex = 7;
-            this.label4.Text = "Start Date :";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
+            this.comboBox1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.comboBox1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "BisTrack",
+            "iScala",
+            "Kinetic"});
+            this.comboBox1.Location = new System.Drawing.Point(342, 140);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(305, 33);
+            this.comboBox1.TabIndex = 9;
             // 
-            // projectStartDate
+            // comboBox2
             // 
-            this.projectStartDate.Location = new System.Drawing.Point(342, 423);
-            this.projectStartDate.Name = "projectStartDate";
-            this.projectStartDate.Size = new System.Drawing.Size(300, 31);
-            this.projectStartDate.TabIndex = 8;
+            this.comboBox2.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.comboBox2.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
+            "pid1001",
+            "pid1002",
+            "pid1003",
+            "pid2001",
+            "pid2002",
+            "pid2003",
+            "pid3001",
+            "pid3002",
+            "pid3003"});
+            this.comboBox2.Location = new System.Drawing.Point(342, 222);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(305, 33);
+            this.comboBox2.TabIndex = 10;
             // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(875, 671);
-            this.Controls.Add(this.projectStartDate);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.saveBtn2);
             this.Controls.Add(this.richTextBox1);
-            this.Controls.Add(this.domainUpDown2);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.ProjectName);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Margin = new System.Windows.Forms.Padding(2);
@@ -175,12 +153,10 @@ namespace TimeSheet1
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.DomainUpDown ProjectName;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.DomainUpDown domainUpDown2;
         private System.Windows.Forms.RichTextBox richTextBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.DateTimePicker projectStartDate;
+        private System.Windows.Forms.Button saveBtn2;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox comboBox2;
     }
 }

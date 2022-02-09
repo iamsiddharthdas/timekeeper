@@ -1,21 +1,29 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\aayush.saxena\\Source\\Repos\\iamsiddharthdas\\timekeeper\\TimeSheet1\\TimeSheet1\\TimeSheet1.csproj": {}
+    "C:\\Users\\siddharth.das\\Source\\Repos\\iamsiddharthdas\\timekeeper\\TimeSheet1\\TimeSheet1\\TimeSheet1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\aayush.saxena\\Source\\Repos\\iamsiddharthdas\\timekeeper\\TimeSheet1\\TimeSheet1\\TimeSheet1.csproj": {
+    "C:\\Users\\siddharth.das\\Source\\Repos\\iamsiddharthdas\\timekeeper\\TimeSheet1\\TimeSheet1\\TimeSheet1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\aayush.saxena\\Source\\Repos\\iamsiddharthdas\\timekeeper\\TimeSheet1\\TimeSheet1\\TimeSheet1.csproj",
+        "projectUniqueName": "C:\\Users\\siddharth.das\\Source\\Repos\\iamsiddharthdas\\timekeeper\\TimeSheet1\\TimeSheet1\\TimeSheet1.csproj",
         "projectName": "TimeSheet1",
-        "projectPath": "C:\\Users\\aayush.saxena\\Source\\Repos\\iamsiddharthdas\\timekeeper\\TimeSheet1\\TimeSheet1\\TimeSheet1.csproj",
-        "packagesPath": "C:\\Users\\aayush.saxena\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\aayush.saxena\\Source\\Repos\\iamsiddharthdas\\timekeeper\\TimeSheet1\\TimeSheet1\\obj\\",
+        "projectPath": "C:\\Users\\siddharth.das\\Source\\Repos\\iamsiddharthdas\\timekeeper\\TimeSheet1\\TimeSheet1\\TimeSheet1.csproj",
+        "packagesPath": "C:\\Users\\siddharth.das\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\siddharth.das\\Source\\Repos\\iamsiddharthdas\\timekeeper\\TimeSheet1\\TimeSheet1\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Progress\\ToolboxNuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
-          "C:\\Users\\aayush.saxena\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\siddharth.das\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Telerik UI for WinForms.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -43,6 +51,10 @@
             "MySql.Data": {
               "target": "Package",
               "version": "[8.0.27, )"
+            },
+            "ui.for.winforms.allcontrols.netcore": {
+              "target": "Package",
+              "version": "[2021.1.223, )"
             }
           },
           "imports": [
@@ -63,7 +75,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <PackageReference Include="MySql.Data" Version="8.0.27" />
+    <PackageReference Include="ui.for.winforms.allcontrols.netcore" Version="2021.1.223" />
   </ItemGroup>
 
 </Project>
